@@ -25,3 +25,4 @@
 /package.json.ember-try
 .git_keep
 .vscode/
+.DS_Store

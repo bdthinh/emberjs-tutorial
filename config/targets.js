@@ -3,7 +3,7 @@
 const browsers = [
   'last 1 Chrome versions',
   'last 1 Firefox versions',
-  'last 1 Safari versions'
+  'last 1 Safari versions',
 ];
 
 const isCI = !!process.env.CI;
@@ -13,6 +13,7 @@ if (isCI || isProduction) {
   browsers.push('ie 11');
 }
 
+// eslint-disable-next-line immutable/no-mutation
 module.exports = {
-  browsers
+  browsers,
 };
